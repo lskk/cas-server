@@ -1,4 +1,4 @@
-# Simple Cas Server
+# Cas (Central Authentication Service) Server
 
 Laravel implement of CAS server
 
@@ -6,7 +6,8 @@ Fork from : [Simple Cas Server](https://github.com/leo108/simple_cas_server/)
 
 ## Protocol
 
-* [CAS protocol](https://apereo.github.io/cas/4.2.x/protocol/CAS-Protocol-Specification.html) v1/v2/v3 without proxy
+* [CAS protocol](https://apereo.github.io/cas/4.2.x/protocol/CAS-Protocol-Specification.html)
+* [Wikipedia](https://en.wikipedia.org/wiki/Central_Authentication_Service)
 
 ## Requirements
 
