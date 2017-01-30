@@ -1,0 +1,28 @@
+language: php
+
+php:
+ - 5.6
+
+cache:
+  directories:
+    - node_modules
+  timeout: 3600
+
+services:
+ - mysql
+
+before_install:
+  - sudo apt-get -qq update
+
+install:
+  - sudo apt-get install -y npm
+  - npm install -g nvm && export NVM_DIR=~/.nvm && . "$NVM_DIR/nvm.sh"
+  - nvm install 0.12.14 && nvm use 0.12.14
+
+before_script:
+ - mysql -e 'create database cas;'
+ - composer install
+ - npm install
+ - gulp
+
+script: phpunit
